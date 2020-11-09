@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
- .inputbox {
+.menu{
+    text-align: right !important;
+    padding-right: 5% !important;
+} 
+
+.inputbox {
     display: grid;
     place-items: center;
-    height: 100vh;
-    background-image: url(./superheroes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 30vh;
   }
 
  .input{ 
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
-    padding-top: 4%;
+    padding-top: 3%;
     padding-bottom: 4%;
     padding-left: 2%;
     padding-right: 2%;
-    background: rgba(0, 0, 0, 0.6);
-    width: 80% !important;
+    width: 100% !important;
  }
 
   .input > h1{
@@ -44,10 +43,21 @@
       font-family: 'montserrat', sans-serif;
       font-weight: 800 !important;
       margin-left: 2%;
-      border-radius: 5px !important;
+      border-radius: 5px !important;  
   }
 
  .input form > Button:hover{
       background-color:#4acf36 !important;
       border-color:#4acf36 !important;
+      color: white !important;
   } 
+  .body{
+      background-color:#22254b !important;
+  }
+  .icon a{
+    font-size: x-large;
+    margin-left: 10px;
+    color: black;
+    margin-top: 5px;
+  }
+ 
