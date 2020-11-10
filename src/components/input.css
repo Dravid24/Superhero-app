@@ -20,11 +20,11 @@
     width: 100% !important;
  }
 
-  .input > h1{
+   h1{
     font-family: 'montserrat', sans-serif;
-    color: white;
-    font-weight: 700;
-    font-size: 250%;
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 250% ;
     padding-bottom: 20px;
  }
 
@@ -60,4 +60,16 @@
     color: black;
     margin-top: 5px;
   }
- 
+ /*  .carousel {
+    margin-top: -30px;
+    margin-left: -100px;
+    margin-right: -70px;
+  } */
+  #card{
+    display:flex;
+    justify-content: space-between;
+  }
+  .logo{
+    position:absolute;
+    margin-left: 4%;
+  }

@@ -17,6 +17,7 @@ const Output = ({name, image, gender, height, weight,publisher, setName}) => {
                         <Text type="success">Height : </Text> &nbsp; &nbsp;{height}<br />
                         <Text type="success">Weight : </Text> &nbsp; &nbsp;{weight} <br/><br />
                         <h2><Text type="success">Description:-</Text></h2>
+                        <p></p>
                     </div>
                 </div>
                 <Divider />

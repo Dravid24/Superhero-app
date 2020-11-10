@@ -15,7 +15,7 @@
     font-size: 250%;
     color:white !important;
     padding-top: 2%;
-     }
+  }
  .intro{
    font-family: 'montserrat', sans-serif;
    justify-content: center !important;
@@ -23,7 +23,7 @@
    font-size: medium;
    font-weight: 600;
  }
-.details{
+ .details{
   display: flex;
   text-align: left;
 }
@@ -34,4 +34,15 @@
 }
 .main > Button{
     margin-bottom:3%;
+}
+@media only screen and (max-width:800px){
+  .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .details >img{
+    width:200px;
+  }
 }
