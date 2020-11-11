@@ -38,11 +38,11 @@ const Superhero = ({input,setInput, FindHero}) => {
                     <div className='carousel'>
                         <Carousel autoplay>
                             <div>
-                            <img src='https://wallpapercave.com/wp/XdubWX1.jpg' alt='hulk' width="100%" height="500"  />
+                            <img src='https://images4.alphacoders.com/844/thumb-1920-844967.jpg' alt='spiderman' width="100%" height="500"  />
                             
                             </div>
                             <div>
-                            <img src='https://images4.alphacoders.com/844/thumb-1920-844967.jpg' alt='wonder_woman' width="100%" height="500"  />
+                            <img src=' https://wallpapercave.com/wp/XdubWX1.jpg' alt='hulk' width="100%" height="500"  />
                             </div>
                             <div>
                             <img src='https://4.bp.blogspot.com/-q0qBWEzC_h4/XJEMRniTyFI/AAAAAAAAA4s/OrCgpTcYHKk2IHJjVlHBHiot_PFclkH4ACKgBGAs/w4096-h2304-c/superman-uhdpaper.com-4K-106.jpg' alt='superman' width="100%" height="500"  />

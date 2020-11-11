@@ -1,27 +1,33 @@
 import { Divider,Button,Result } from 'antd';
 import Text from 'antd/lib/typography/Text';
-import Title from 'antd/lib/typography/Title';
 import React from 'react';
 import './Result.css';
 
-const Output = ({name, image, gender, height, weight,publisher, setName}) => {
+const Output = ({details, setName}) => {
     return (
         <div className="main">
-                <h1>Your SuperHero </h1><br />
-                <div className='details'>
-                <img src={image} alt="character image" width='25%'/><br />
-                    <div className="intro">
-                        <Text type="success">Full-Name : &nbsp; &nbsp;</Text> {name} <br />
-                        <Text type="success">Publisher : </Text> &nbsp; &nbsp;{publisher} <br />
-                        <Text type="success">gender : </Text> &nbsp; &nbsp; {gender}<br />
-                        <Text type="success">Height : </Text> &nbsp; &nbsp;{height}<br />
-                        <Text type="success">Weight : </Text> &nbsp; &nbsp;{weight} <br/><br />
-                        <h2><Text type="success">Description:-</Text></h2>
-                        <p></p>
-                    </div>
-                </div>
-                <Divider />
-                
+                <h1>Your SuperHero </h1><Button type="primary" onClick={() =>{setName("")}}>
+                    Back
+                </Button> <br />
+                {details.map (detail => {
+                    return(
+                        <div key={detail.id}>
+                        <div className='details'>
+                        <img src={detail.image.url} alt="character image" width='20%'/><br />
+                            <div className="intro">
+                                <Text type="success">Full-Name : &nbsp; &nbsp;</Text> {detail.name}<br />
+                                <Text type="success">gender : </Text> &nbsp; &nbsp; {detail.appearance.gender}<br />
+                                <Text type="success">Height : </Text> &nbsp; &nbsp;{detail.appearance.height[1]}<br />
+                                <Text type="success">Weight : </Text> &nbsp; &nbsp;{detail.appearance.weight[1]} <br/>
+                                <Text type="success">Publisher : </Text> &nbsp; &nbsp;{detail.biography.publisher} <br /><br />
+                                <h2><Text type="success">Description:-</Text></h2>
+                            </div>
+                        </div>
+                        <Divider /> 
+                        </div>
+                    )
+                })}
+             
                 <Button type="primary" onClick={() =>{setName("")}}>
                     Back
                 </Button>
