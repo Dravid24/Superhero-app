@@ -9,7 +9,6 @@ import { Button,Result } from 'antd';
 const App = () => {
   const [input,setInput] = useState('');
   const [status,setStatus] = useState('');
-  const [name,setName] = useState('');
   const [details, setDetails] = useState([]);
 
 
@@ -18,10 +17,9 @@ const App = () => {
     const url = "api/" +key+ "/search/"+input;
     const response =await axios.get(url);
     console.log(response);
-    const name = await response.data.results[0].name;
+   
     const status = await response.data.response;
     setStatus(status);
-    setName(name); 
     setDetails(response.data.results);
     setInput('');
   }
@@ -30,16 +28,15 @@ const App = () => {
   return (
     <div className="App">
     {
-      name === "" ? 
-      <Superhero input={input} setInput={setInput} FindHero={FindHero}/> 
-      : status === 'success' ?
-      <Output input={input} name={name} details={details} setName={setName}/> :
+      status === 'error' ?
       <Result
                     status="404"
-                    title="404"
-                    subTitle="Sorry, You entered wrong SuperHero name."
-                    extra={<Button type="primary">Back Home</Button>}
-        />
+                    title="Sorry, You entered wrong SuperHero name."
+                    subTitle="Please enter valid SuperHero name"
+                    extra={<Button type="primary" onClick={() =>{setStatus("")}}>Back Home</Button>}
+        /> : status === "success" ?  
+        <Output input={input} details={details} setStatus={setStatus}/> :
+        <Superhero input={input} setInput={setInput} FindHero={FindHero}/> 
     } 
     </div>
   );

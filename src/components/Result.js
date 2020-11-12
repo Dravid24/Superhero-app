@@ -1,12 +1,12 @@
-import { Divider,Button,Result } from 'antd';
+import { Divider,Button } from 'antd';
 import Text from 'antd/lib/typography/Text';
 import React from 'react';
 import './Result.css';
 
-const Output = ({details, setName}) => {
+const Output = ({details, setStatus}) => {
     return (
         <div className="main">
-                <h1>Your SuperHero </h1><Button type="primary" onClick={() =>{setName("")}}>
+                <h1>Your SuperHero </h1><Button type="primary" onClick={() =>{setStatus("")}}>
                     Back
                 </Button> <br />
                 {details.map (detail => {
@@ -28,7 +28,7 @@ const Output = ({details, setName}) => {
                     )
                 })}
              
-                <Button type="primary" onClick={() =>{setName("")}}>
+                <Button type="primary" onClick={() =>{setStatus("")}}>
                     Back
                 </Button>
     

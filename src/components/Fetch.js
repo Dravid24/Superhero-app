@@ -47,14 +47,19 @@ const Fetch = () => {
                     >
                         <div className='title'>
                             <Meta title={heros.name}  />
+                            <div className='publish'>
+                                Publisher:- <Meta title={heros.biography.publisher} ></Meta>
+                            </div>
+                           
                         </div>              
                 </Card>   
             ))} 
+             </div>
             <div className='pagination'>
                 <Pagination defaultCurrent={1} total={78} />
             </div>
             
-            </div>
+           
                         
         </div>
     )

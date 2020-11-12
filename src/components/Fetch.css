@@ -8,3 +8,7 @@
     justify-items: center !important;
     margin-left: 35%;
 }
+.publish{
+    display: flex;
+    padding-top: 10px;
+}
