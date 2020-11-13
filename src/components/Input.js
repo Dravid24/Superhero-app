@@ -24,31 +24,31 @@ const Superhero = ({input,setInput, FindHero}) => {
     return (
         <>
             <Layout className='body'>
-                <Header style={{ position: 'fixed', zIndex: 1, width: '100%',backgroundColor: 'dark' }}>
+                <Header style={{ position: 'fixed', zIndex: 1, width: '100%',backgroundColor: 'dark' }} breakpoint="lg" collapsedWidth="0">
                 <div className="logo" ><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/superman-44-834928.png' alt='logo' width='40%' height='65'/></div>
                 <Menu className='menu' theme="dark" mode="horizontal"  defaultSelectedKeys={['1']}>
                     <Menu.Item key="1" >Home</Menu.Item>
-                    <Menu.Item key="2" >Characters List</Menu.Item>
+                    <Menu.Item key="2" >Characters List</Menu.Item>    
                 </Menu>
                 </Header>
                 
                 <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}> 
-                <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+                <div className="site-layout-background" /* style={{ padding: 10 }} */>
                 {/* ===========================Carousel=================================== */}
                     <div className='carousel'>
                         <Carousel autoplay>
                             <div>
-                            <img src='https://images4.alphacoders.com/844/thumb-1920-844967.jpg' alt='spiderman' width="100%" height="500"  />
+                            <img src='https://images4.alphacoders.com/844/thumb-1920-844967.jpg' alt='spiderman' width="100%" height="400"  />
                             
                             </div>
                             <div>
-                            <img src=' https://wallpapercave.com/wp/XdubWX1.jpg' alt='hulk' width="100%" height="500"  />
+                            <img src=' https://wallpapershome.com/images/wallpapers/wonder-woman-3840x2160-4k-gal-gadot-11650.jpg' alt='batman' width="100%" height="400"  />
                             </div>
                             <div>
-                            <img src='https://4.bp.blogspot.com/-q0qBWEzC_h4/XJEMRniTyFI/AAAAAAAAA4s/OrCgpTcYHKk2IHJjVlHBHiot_PFclkH4ACKgBGAs/w4096-h2304-c/superman-uhdpaper.com-4K-106.jpg' alt='superman' width="100%" height="500"  />
+                            <img src='https://4.bp.blogspot.com/-q0qBWEzC_h4/XJEMRniTyFI/AAAAAAAAA4s/OrCgpTcYHKk2IHJjVlHBHiot_PFclkH4ACKgBGAs/w4096-h2304-c/superman-uhdpaper.com-4K-106.jpg' alt='superman' width="100%" height="400"  />
                             </div>
                             <div>
-                            <img src='https://wallpapercave.com/wp/wp1835381.jpg' alt='batman' width="100%" height="500" />
+                            <img src='https://cdn.wallpapersafari.com/51/29/vZmCDV.jpg' alt='wonder_woman' width="100%" height="400" />
                             </div>
                         </Carousel>
                     </div>
@@ -70,7 +70,7 @@ const Superhero = ({input,setInput, FindHero}) => {
                 </Content>
                 
                     {/* =====================================Footer============================== */}
-                <Footer style={{ textAlign: 'center' }} theme='dark'>
+                <Footer className='footer'>
                     SuperHeros ©2020 Created by Dravid R. <br />
                     <div className="icon">
                         <a href='#'><FacebookFilled /></a> 

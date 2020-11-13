@@ -21,7 +21,17 @@ const Output = ({details, setStatus}) => {
                                 <Text type="success">Weight : </Text> &nbsp; &nbsp;{detail.appearance.weight[1]} <br/>
                                 <Text type="success">Publisher : </Text> &nbsp; &nbsp;{detail.biography.publisher} <br /><br />
                                 <h2><Text type="success">Description:-</Text></h2>
-                            </div>
+                    <p>I am {detail.name} and my relations are {detail.connections.relatives} and my powerstats are listed 
+                    <ul>
+                        <li>intelligence: {detail.powerstats.intelligence}</li>
+                        <li>Strength: {detail.powerstats.strength}</li>
+                        <li>Speed: {detail.powerstats.speed}</li>
+                        <li>Power: {detail.powerstats.power}</li>
+                        <li>Durability: {detail.powerstats.durability}</li>
+                        <li>Combat: {detail.powerstats.combat}</li>
+                    </ul> 
+                    </p>
+                    </div>
                         </div>
                         <Divider /> 
                         </div>

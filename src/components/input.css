@@ -4,11 +4,14 @@
     text-align: right !important;
     padding-right: 5% !important;
 } 
-
 .inputbox {
     display: grid;
     place-items: center;
-    height: 30vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.12);
+    background-color: rgba(0, 0, 0, 0.12);
+    margin: 5%;
   }
 
  .input{ 
@@ -20,11 +23,10 @@
     width: 100% !important;
  }
 
-   h1{
+  h1{
     font-family: 'montserrat', sans-serif;
     color: #22254b !important;
     font-weight: 700 !important;
-    font-size: 250% ;
     padding-bottom: 20px;
  }
 
@@ -51,20 +53,13 @@
       border-color:#4acf36 !important;
       color: white !important;
   } 
-  /* .body{
-      background-color:#22254b !important;
-  } */
+
   .icon a{
     font-size: x-large;
     margin-left: 10px;
-    color: black;
     margin-top: 5px;
+    color: white ;
   }
- /*  .carousel {
-    margin-top: -30px;
-    margin-left: -100px;
-    margin-right: -70px;
-  } */
   #card{
     display:flex;
     justify-content: space-between;
@@ -72,4 +67,14 @@
   .logo{
     position:absolute;
     margin-left: 4%;
+  }
+  .footer{
+    background-color:#131521 !important;
+    text-align: center;
+    color: white !important;
+  }
+  .carousel{
+    margin: 2%;
+    justify-content: center !important;
+    height: auto !important;
   }

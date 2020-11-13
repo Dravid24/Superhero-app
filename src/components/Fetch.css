@@ -2,11 +2,12 @@
     display:flex;
     flex-wrap: wrap; 
     justify-content: space-between; 
-    
-}
+    align-items: center;
+   }
 .pagination{
-    justify-items: center !important;
+    align-items: center !important;
     margin-left: 35%;
+    margin-bottom: 2%;
 }
 .publish{
     display: flex;
