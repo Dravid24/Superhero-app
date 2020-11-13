@@ -34,7 +34,7 @@ const Superhero = ({input,setInput, FindHero}) => {
                 
                 <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}> 
                 <div className="site-layout-background" /* style={{ padding: 10 }} */>
-                {/* ===========================Carousel=================================== */}
+                {/* ===========================Carousel============================= */}
                     <div className='carousel'>
                         <Carousel autoplay>
                             <div>
