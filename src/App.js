@@ -13,8 +13,7 @@ const App = () => {
 
 
   const FindHero = async () =>{
-    const key="2892825827616713";
-    const url = "api/" +key+ "/search/"+input;
+    const url = "https://cors-anywhere.herokuapp.com/https://www.superheroapi.com/api/2892825827616713/search/"+input;
     const response =await axios.get(url);
     console.log(response);
    

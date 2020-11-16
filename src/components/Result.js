@@ -21,7 +21,7 @@ const Output = ({details, setStatus}) => {
                                 <Text type="success">Weight : </Text> &nbsp; &nbsp;{detail.appearance.weight[1]} <br/>
                                 <Text type="success">Publisher : </Text> &nbsp; &nbsp;{detail.biography.publisher} <br /><br />
                                 <h2><Text type="success">Description:-</Text></h2>
-                    <p>I am {detail.name} and my relations are {detail.connections.relatives} and my powerstats are listed 
+                    <p>I am {detail.name} and my relations are {detail.connections.relatives} and my powerstats are listed </p>
                     <ul>
                         <li>intelligence: {detail.powerstats.intelligence}</li>
                         <li>Strength: {detail.powerstats.strength}</li>
@@ -30,7 +30,7 @@ const Output = ({details, setStatus}) => {
                         <li>Durability: {detail.powerstats.durability}</li>
                         <li>Combat: {detail.powerstats.combat}</li>
                     </ul> 
-                    </p>
+                    
                     </div>
                         </div>
                         <Divider /> 

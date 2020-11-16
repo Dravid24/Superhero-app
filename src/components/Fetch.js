@@ -1,19 +1,24 @@
 import axios from 'axios'
 import React, { useState, useEffect} from 'react'
+//import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Pages from './Pagination';
 import './Fetch.css'
-import { Pagination } from 'antd';
+//import { Button, Result } from 'antd';
 import {Card } from 'antd';
+
 const { Meta } = Card;
 
-const Fetch = () => {
+
+
+const Fetch = (props) => {
     const [hero , setHero] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [heroPerPage, setHeroPerPage] = useState(12);
 
-
+   
     const submit =() =>{
-        
-        alert("clicked super hero ");
+       // props.history.push('/hero')
+       alert("SuperHero was Clicked");
     }
 
     useEffect(() =>{
@@ -34,6 +39,9 @@ const Fetch = () => {
     const indexOfLastPost = currentPage * heroPerPage;
     const indexOfFirstPost = indexOfLastPost - heroPerPage;
     const currentPosts = hero.slice(indexOfFirstPost , indexOfLastPost);
+
+    //Change page
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
     
     return (
         <div>
@@ -45,7 +53,7 @@ const Fetch = () => {
                     style={{ width: 240 , marginBottom: '20px' }}
                     cover={<img alt={heros.name} src={heros.image.url} height='300' onClick={submit}/>}
                     >
-                        <div className='title'>
+                            <div className='title'>
                             <Meta title={heros.name}  />
                             <div className='publish'>
                                 Publisher:- <Meta title={heros.biography.publisher} ></Meta>
@@ -55,10 +63,9 @@ const Fetch = () => {
                 </Card>   
             ))} 
              </div>
-            <div className='pagination'>
-                <Pagination defaultCurrent={1} total={78} />
-            </div>
-            
+           
+           <Pages heroPerPage={heroPerPage} totalPosts={hero.length} paginate={paginate}/>
+        
            
                         
         </div>

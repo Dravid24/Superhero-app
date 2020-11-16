@@ -1,7 +1,8 @@
 .card{
     display:flex;
     flex-wrap: wrap; 
-    justify-content: space-between; 
+    padding-right: 10px !important;
+    justify-content: space-around;
     align-items: center;
    }
 .pagination{

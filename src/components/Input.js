@@ -28,21 +28,17 @@ const Superhero = ({input,setInput, FindHero}) => {
                 <div className="logo" ><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/superman-44-834928.png' alt='logo' width='40%' height='65'/></div>
                 <Menu className='menu' theme="dark" mode="horizontal"  defaultSelectedKeys={['1']}>
                     <Menu.Item key="1" >Home</Menu.Item>
-                    <Menu.Item key="2" >Characters List</Menu.Item>    
+                    <Menu.Item key="2" href='#character' >Characters List</Menu.Item>    
                 </Menu>
                 </Header>
                 
-                <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}> 
+                <Content className="site-layout" style={{ padding: '0 10px', marginTop: 64 }}> 
                 <div className="site-layout-background" /* style={{ padding: 10 }} */>
                 {/* ===========================Carousel============================= */}
                     <div className='carousel'>
                         <Carousel autoplay>
                             <div>
-                            <img src='https://images4.alphacoders.com/844/thumb-1920-844967.jpg' alt='spiderman' width="100%" height="400"  />
-                            
-                            </div>
-                            <div>
-                            <img src=' https://wallpapershome.com/images/wallpapers/wonder-woman-3840x2160-4k-gal-gadot-11650.jpg' alt='batman' width="100%" height="400"  />
+                            <img src='https://images4.alphacoders.com/844/thumb-1920-844967.jpg' alt='spiderman' width="100%" height="400"  /> 
                             </div>
                             <div>
                             <img src='https://4.bp.blogspot.com/-q0qBWEzC_h4/XJEMRniTyFI/AAAAAAAAA4s/OrCgpTcYHKk2IHJjVlHBHiot_PFclkH4ACKgBGAs/w4096-h2304-c/superman-uhdpaper.com-4K-106.jpg' alt='superman' width="100%" height="400"  />
@@ -64,8 +60,11 @@ const Superhero = ({input,setInput, FindHero}) => {
                         </div>         
                     </div>
                     {/* ===============================Lists================================== */}
-                    <h1><u>Some SuperHero characters</u></h1>
-                    <Fetch /> 
+                    <div id="character">
+                        <h1><u>Some SuperHero characters</u></h1>
+                        <Fetch /> 
+                    </div>
+                   
                 </div>
                 </Content>
                 

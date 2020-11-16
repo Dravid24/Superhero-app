@@ -75,5 +75,7 @@
   }
   .carousel{
     margin: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
     height: auto !important;
   }
