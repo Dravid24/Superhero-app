@@ -1,0 +1,8 @@
+.pagination{
+    display: flex;
+    justify-items: left !important;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: left !important;
+    margin-left: 0px !important;
+}

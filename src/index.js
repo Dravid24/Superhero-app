@@ -6,21 +6,22 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Hero from './components/Hero';
 
-const Home = (props) => {
-     console.log(props);
-     return(
-          <>
-          <BrowserRouter>
-          <div>
-          <Switch>
-               <Route exact path='/' component={App} />
-               <Route exact path='/hero' children={Hero} />
-          </Switch>
-          </div>
-         
-          </BrowserRouter>
-          </>
-     )
+class Home extends React.Component{
+     render(){
+          return(
+               <>
+                    <BrowserRouter>
+                    <div>
+                    <Switch>
+                         <Route exact path='/' component={App} />
+                         <Route exact path='/:id' component={Hero} />
+                    </Switch>
+                    </div>
+               
+                    </BrowserRouter>
+               </>
+          )
+     }
 }
 
 ReactDOM.render(

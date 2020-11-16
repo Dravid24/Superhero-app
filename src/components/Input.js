@@ -25,7 +25,7 @@ const Superhero = ({input,setInput, FindHero}) => {
         <>
             <Layout className='body'>
                 <Header style={{ position: 'fixed', zIndex: 1, width: '100%',backgroundColor: 'dark' }} breakpoint="lg" collapsedWidth="0">
-                <div className="logo" ><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/superman-44-834928.png' alt='logo' width='40%' height='65'/></div>
+                <div className="logo" ><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/superman-44-834928.png' alt='logo' width='25%' height='55'/></div>
                 <Menu className='menu' theme="dark" mode="horizontal"  defaultSelectedKeys={['1']}>
                     <Menu.Item key="1" >Home</Menu.Item>
                     <Menu.Item key="2" href='#character' >Characters List</Menu.Item>    
