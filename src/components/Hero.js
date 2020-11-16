@@ -23,7 +23,7 @@ const Hero = () => {
                             <li>Power: -{/* {detail.powerstats.power} */}</li>
                             <li>Durability: -{/* {detail.powerstats.durability} */}</li>
                             <li>Combat: -{/* {detail.powerstats.combat} */}</li>
-                        </ul> 
+                        </ul>
                         
                         </div>
                     </div>
