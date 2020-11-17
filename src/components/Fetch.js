@@ -6,6 +6,7 @@ import './Fetch.css'
 //import { Button, Result } from 'antd';
 import {Button, Card } from 'antd';
 import { Link } from 'react-router-dom';
+import Hero from './Hero';
 
 const { Meta } = Card;
 
@@ -43,28 +44,36 @@ const Fetch = (props) => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
     
     return (
-        <div>
-            <div className='card'>
-            {currentPosts.map(heros => (
-                <Card
-                    key={heros.id}
-                    hoverable
-                    style={{ width: 240 , marginBottom: '20px' }}
-                    cover={<img alt={heros.name} src={heros.image.url} height='300' />}
-                    >
-                            <div className='title'>
-                            <Meta title={heros.name}  />
-                            <div className='publish'>
-                                Publisher:- <Meta title={heros.biography.publisher} ></Meta>
-                            </div>
-                            <Link to={heros.id} className='link'>Learn More</Link>
-                        </div>              
-                </Card>   
-            ))} 
-             </div>
-           
-           <Pages heroPerPage={heroPerPage} totalPosts={hero.length} paginate={paginate}/>
         
+        <div>
+            {
+               hero.id === '' ? <Hero /> :
+                <>
+                <div className='card'>
+                {currentPosts.map(heros => (
+                    <Card
+                        key={heros.id}
+                        hoverable
+                        style={{ width: 240 , marginBottom: '20px' }}
+                        cover={<img alt={heros.name} src={heros.image.url} height='300' />}
+                        >
+                                <div className='title'>
+                                <Meta title={heros.name}  />
+                                <div className='publish'>
+                                    Publisher:- <Meta title={heros.biography.publisher} ></Meta>
+                                </div>
+                                <Link to={heros.id} className='link'>Learn More</Link>
+                            </div>              
+                    </Card>   
+                ))} 
+                 </div>
+               
+               <Pages heroPerPage={heroPerPage} totalPosts={hero.length} paginate={paginate}/>
+                </> 
+               
+            }
+            
+          
            
                         
         </div>
