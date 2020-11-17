@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 .main {
-  background-color: #22254b;
+  background-color:#cfd7e3;
   /* background-image: url('background.gif');
   background-repeat: no-repeat;
   background-size: cover; */
   text-align: center;
-  color: white;
+  color: #22254b;
   }
 
 .main h1{
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
     font-size: 250%;
-    color:white !important;
+    color:#22254b !important;
     padding-top: 2%;
-     }
+  }
  .intro{
    font-family: 'montserrat', sans-serif;
    justify-content: center !important;
@@ -23,7 +23,7 @@
    font-size: medium;
    font-weight: 600;
  }
-.details{
+ .details{
   display: flex;
   text-align: left;
 }
@@ -34,4 +34,15 @@
 }
 .main > Button{
     margin-bottom:3%;
+}
+@media only screen and (max-width:800px){
+  .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .details >img{
+    width:200px;
+  }
 }
