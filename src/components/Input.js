@@ -36,12 +36,13 @@ const Superhero = ({ input, setInput, FindHero }) => {
           }}
           breakpoint="lg"
           collapsedWidth="0"
+          className="header"
         >
           <div className="logo">
             <img
               src="https://cdn.iconscout.com/icon/premium/png-256-thumb/superman-44-834928.png"
               alt="logo"
-              width="25%"
+              width="40"
               height="55"
             />
           </div>
@@ -50,6 +51,7 @@ const Superhero = ({ input, setInput, FindHero }) => {
             theme="dark"
             mode="horizontal"
             defaultSelectedKeys={["1"]}
+            style={{ float: "right" }}
           >
             <Menu.Item key="1">Home</Menu.Item>
             <Menu.Item key="2" href="#character">
